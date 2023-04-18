@@ -65,7 +65,7 @@ void Stack<T>::pop() {
 // WARNING: UNDEFINED BEHAVIOUR IF STACK IS EMPTY. USE EMPTY() CHECK BEFORE USE OF TOP()
 // Time Complexity: O(1)
 template <class T>
-T& Stack<T>::top() {
+T Stack<T>::top() const {
     return stack_.back();
 }
 
