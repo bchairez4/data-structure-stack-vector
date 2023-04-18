@@ -27,7 +27,7 @@ class Stack {
         T& operator=(const Stack<T>& other);
         void push(const T& data);
         void pop();
-        T& top();
+        T top() const;
         bool empty() const;
         int size() const;
 };
